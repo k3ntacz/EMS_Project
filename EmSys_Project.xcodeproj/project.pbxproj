@@ -19,12 +19,41 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4B68D1772E95536A001BBE2C /* EmSys_Project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = EmSys_Project; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B68D1842E955805001BBE2C /* EmSys_Project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = EmSys_Project; path = "/Users/petr/Library/Mobile Documents/com~apple~CloudDocs/Škola/Vysoká škola/7. Semestr/EMS/EmSys_Project/build/Debug/EmSys_Project"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		4B68D1882E955E42001BBE2C /* Exceptions for "EmSys_Project" folder in "EmSys_Project" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				SPI/SPI.c,
+				SRAM/SRAM.c,
+				UART/UART.c,
+			);
+			target = 4B68D1762E95536A001BBE2C /* EmSys_Project */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		4B68D1972E956622001BBE2C /* Exceptions for "EmSys_Project" folder in "Compile Sources" phase from "EmSys_Project" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 4B68D1732E95536A001BBE2C /* Sources */;
+			membershipExceptions = (
+				ADC/ADC.h,
+				OLED/OLED.h,
+				UTILS/UTILS_IO.h,
+				UTILS/UTILS_JOY.h,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		4B68D1792E95536A001BBE2C /* EmSys_Project */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				4B68D1882E955E42001BBE2C /* Exceptions for "EmSys_Project" folder in "EmSys_Project" target */,
+				4B68D1972E956622001BBE2C /* Exceptions for "EmSys_Project" folder in "Compile Sources" phase from "EmSys_Project" target */,
+			);
 			path = EmSys_Project;
 			sourceTree = "<group>";
 		};
@@ -45,16 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				4B68D1792E95536A001BBE2C /* EmSys_Project */,
-				4B68D1782E95536A001BBE2C /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		4B68D1782E95536A001BBE2C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				4B68D1772E95536A001BBE2C /* EmSys_Project */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,7 +99,7 @@
 			packageProductDependencies = (
 			);
 			productName = EmSys_Project;
-			productReference = 4B68D1772E95536A001BBE2C /* EmSys_Project */;
+			productReference = 4B68D1842E955805001BBE2C /* EmSys_Project */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -93,6 +113,7 @@
 				TargetAttributes = {
 					4B68D1762E95536A001BBE2C = {
 						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1620;
 					};
 				};
 			};
@@ -106,7 +127,7 @@
 			mainGroup = 4B68D16E2E95536A001BBE2C;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 4B68D1782E95536A001BBE2C /* Products */;
+			productRefGroup = 4B68D16E2E95536A001BBE2C;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -244,16 +265,21 @@
 		4B68D17F2E95536A001BBE2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
 		4B68D1802E95536A001BBE2C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
